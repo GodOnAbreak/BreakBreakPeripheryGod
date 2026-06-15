@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Periphery Simple</title>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Quantico', sans-serif;
+            background: #ddd;
+        }
+
+        /* TOP BAR */
+        .navbar {
+            background: black;
+            color: white;
+            padding: 12px;
+        }
+
+        .navbar a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .navbar a:hover {
+            color: lime;
+        }
+
+        /* PAGE LAYOUT */
+        .page {
+            display: flex;
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            width: 180px;
+            background: #111;
+            color: #aaa;
+            padding: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #ccc;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            color: lime;
+        }
+
+        /* MAIN */
+        .main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        /* ALBUM BLOCK */
+        .album {
+            background: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            overflow: auto;
+        }
+
+        .cover {
+            width: 200px;
+            height: 200px;
+            background: #ccc;
+            float: left;
+            margin-right: 20px;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        .album-text {
+            overflow: hidden;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 6px 10px;
+            background: black;
+            color: white;
+            text-decoration: none;
+            margin-right: 5px;
+            font-size: 12px;
+        }
+
+        .btn:hover {
+            background: lime;
+            color: black;
+        }
+
+        /* SECTION BOXES */
+        .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border-bottom: 1px solid #aaa;
+            padding: 8px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    periphery |
+    <a href="#music">music</a>
+    <a href="#tour">tour</a>
+    <a href="#contact">contact</a>
+</div>
+
+<div class="page">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <a href="#music">music</a>
+        <a href="#tour">tour</a>
+        <a href="#contact">contact</a>
+        <br><br>
+        progressive metal<br>
+        washington d.c.<br>
+        djent band
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+
+        <!-- MUSIC -->
+        <div id="music"></div>
+
+        <div class="album">
+            <div class="cover">Album 1</div>
+            <div>
+                <h3>Periphery III</h3>
+                <p>2016</p>
+                <a class="btn" href="#">Listen</a>
+                <a class="btn" href="#">Store</a>
+            </div>
+        </div>
+
+        <div class="album">
+            <div class="cover">Album 2</div>
+            <div>
+                <h3>Periphery IV</h3>
+                <p>2019</p>
+                <a class="btn" href="#">Listen</a>
+                <a class="btn" href="#">Store</a>
+            </div>
+        </div>
+
+        <div class="album">
+            <div class="cover">Album 3</div>
+            <div>
+                <h3>A Pale White Dot</h3>
+                <p>2023</p>
+                <a class="btn" href="#">Listen</a>
+                <a class="btn" href="#">Store</a>
+            </div>
+        </div>
+
+        <!-- TOUR -->
+        <div id="tour" class="section">
+            <h2>Tour Dates</h2>
+
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>City</th>
+                    <th>Venue</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Jul 12</td>
+                    <td>LA</td>
+                    <td>Wiltern</td>
+                    <td><a class="btn" href="#">Tickets</a></td>
+                </tr>
+                <tr>
+                    <td>Jul 15</td>
+                    <td>Denver</td>
+                    <td>Summit</td>
+                    <td><a class="btn" href="#">Tickets</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- CONTACT -->
+        <div id="contact" class="section">
+            <h2>Contact</h2>
+
+            <p>
+                Management: example@email.com <br>
+                Booking: example@email.com <br>
+                Press: example@email.com
+            </p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
