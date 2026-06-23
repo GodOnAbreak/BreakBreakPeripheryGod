@@ -1,7 +1,6 @@
-"ArtistSiteContent" should be finished.
+"ArtistSiteContent_FINAL" should be finished.
 
-There is one missing file and you can download it on: https://www.youtube.com/watch?v=sf_gEV447bg
+ASSETS: https://drive.google.com/drive/folders/17Pr3YcE9gqYyl0Lt2vsBku0QmkRBaYUg?usp=sharing
 
-Using: https://cnvmp3.com/v54
-
-And rename it to "pale.mp4"
+Download both folders inside
+Place inside ArtistSiteContent_FINAL
